@@ -1,0 +1,314 @@
+/* ==========================================================================
+   BRAND: "Ohio Stay Legal" — working name, verification pending.
+   The brand name does not appear anywhere else in this stylesheet.
+   ========================================================================== */
+
+/* ---------- Base ---------- */
+
+:root {
+  --navy: #1b4965;        /* primary / theme color */
+  --navy-dark: #12314a;
+  --ink: #1d2733;         /* body text */
+  --muted: #4a5a68;
+  --paper: #fdfcf9;
+  --panel: #f2f5f7;
+  --line: #c9d3da;
+  --accent-soft: #e8eff4;
+  --warn-bg: #fbf6e9;
+  --warn-line: #d9c98a;
+  --radius: 10px;
+}
+
+* { box-sizing: border-box; }
+
+html { font-size: 18px; }
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+  font-size: 1rem;
+  line-height: 1.65;
+}
+
+.wrap {
+  max-width: 46rem;
+  margin: 0 auto;
+  padding: 0 1.1rem 3rem;
+}
+
+/* ---------- Header / footer ---------- */
+
+.site-header {
+  background: var(--navy);
+  color: #fff;
+  margin-bottom: 2rem;
+}
+
+.site-header .wrap { padding-top: 1rem; padding-bottom: 1rem; }
+
+.brand {
+  font-size: 1.35rem;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  color: #fff;
+  text-decoration: none;
+}
+
+.site-nav { margin-top: 0.35rem; font-size: 0.95rem; }
+
+.site-nav a {
+  color: #d7e6f0;
+  text-decoration: underline;
+  margin-right: 1.1rem;
+}
+
+.site-nav a:focus, .site-nav a:hover { color: #fff; }
+
+.site-footer {
+  border-top: 2px solid var(--line);
+  margin-top: 3rem;
+  padding-top: 1.2rem;
+  font-size: 0.92rem;
+  color: var(--muted);
+}
+
+/* ---------- Type ---------- */
+
+h1 {
+  font-size: 2rem;
+  line-height: 1.2;
+  margin: 0.4rem 0 0.6rem;
+  color: var(--navy-dark);
+}
+
+h2 {
+  font-size: 1.45rem;
+  line-height: 1.3;
+  margin: 2.4rem 0 0.7rem;
+  color: var(--navy-dark);
+  border-bottom: 2px solid var(--accent-soft);
+  padding-bottom: 0.3rem;
+}
+
+h3 {
+  font-size: 1.15rem;
+  line-height: 1.35;
+  margin: 1.6rem 0 0.5rem;
+  color: var(--navy-dark);
+}
+
+p { margin: 0.6rem 0; }
+
+.lede {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  color: var(--muted);
+  margin-top: 0;
+}
+
+a { color: var(--navy); }
+
+a:focus-visible, button:focus-visible, input:focus-visible {
+  outline: 3px solid var(--navy);
+  outline-offset: 2px;
+}
+
+ul, ol { padding-left: 1.4rem; }
+li { margin: 0.35rem 0; }
+
+hr {
+  border: none;
+  border-top: 1px solid var(--line);
+  margin: 2rem 0;
+}
+
+blockquote {
+  margin: 1rem 0;
+  padding: 0.9rem 1.1rem;
+  background: var(--panel);
+  border-left: 4px solid var(--navy);
+  font-size: 0.98rem;
+}
+
+blockquote p { margin: 0.3rem 0; }
+
+.small { font-size: 0.92rem; color: var(--muted); }
+
+/* ---------- Panels, callouts, buttons ---------- */
+
+.callout {
+  background: var(--warn-bg);
+  border: 1px solid var(--warn-line);
+  border-radius: var(--radius);
+  padding: 1rem 1.2rem;
+  margin: 1.4rem 0;
+}
+
+.callout p:first-child { margin-top: 0; }
+.callout p:last-child { margin-bottom: 0; }
+
+.panel {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 1.1rem 1.2rem;
+  margin: 1.4rem 0;
+}
+
+.button {
+  display: inline-block;
+  background: var(--navy);
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 700;
+  text-decoration: none;
+  padding: 0.85rem 1.6rem;
+  border-radius: var(--radius);
+  border: 2px solid var(--navy-dark);
+}
+
+.button:hover, .button:focus { background: var(--navy-dark); }
+
+.price-line { font-size: 1.15rem; }
+.price-line strong { font-size: 1.35rem; color: var(--navy-dark); }
+
+/* ---------- Key facts (sales page) ---------- */
+
+.fact-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.7rem;
+  margin: 1.2rem 0;
+}
+
+.fact {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-left: 5px solid var(--navy);
+  border-radius: 6px;
+  padding: 0.7rem 1rem;
+}
+
+.fact strong {
+  display: block;
+  font-size: 1.2rem;
+  color: var(--navy-dark);
+}
+
+/* ---------- Tables ---------- */
+
+.table-scroll { overflow-x: auto; margin: 1rem 0; }
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 0.97rem;
+  background: #fff;
+}
+
+th, td {
+  border: 1px solid var(--line);
+  padding: 0.55rem 0.7rem;
+  text-align: left;
+  vertical-align: top;
+}
+
+th { background: var(--accent-soft); color: var(--navy-dark); }
+
+tbody tr:nth-child(even) td { background: #fbfcfd; }
+
+/* ---------- Table of contents ---------- */
+
+.toc {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 1rem 1.2rem;
+  margin: 1.5rem 0;
+}
+
+.toc h2 {
+  border: none;
+  margin: 0 0 0.5rem;
+  font-size: 1.15rem;
+  padding: 0;
+}
+
+.toc ol { margin: 0.3rem 0; }
+
+/* ---------- Checklist (packet page) ---------- */
+
+.progress-line {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--navy-dark);
+  background: var(--accent-soft);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 0.7rem 1rem;
+}
+
+.checklist-item {
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 0.4rem 1.1rem 0.9rem;
+  margin: 1rem 0;
+  background: #fff;
+}
+
+.checklist-item.is-done {
+  background: var(--panel);
+  border-color: var(--navy);
+}
+
+.checklist-item.is-done h3 { color: var(--muted); }
+
+.item-toggle {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.6rem;
+  cursor: pointer;
+}
+
+.item-toggle input[type="checkbox"] {
+  width: 1.5rem;
+  height: 1.5rem;
+  flex: 0 0 auto;
+  margin-top: 0.15rem;
+  accent-color: var(--navy);
+  cursor: pointer;
+}
+
+/* ---------- Template letter ---------- */
+
+.letter {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  padding: 1.2rem 1.3rem;
+  margin: 1rem 0;
+  box-shadow: 0 1px 3px rgba(18, 49, 74, 0.08);
+}
+
+.letter p { margin: 0.55rem 0; }
+
+/* ---------- FAQ ---------- */
+
+.faq-item h3 { margin-bottom: 0.3rem; }
+.faq-item p { margin-top: 0.2rem; }
+
+/* ---------- Wider screens ---------- */
+
+@media (min-width: 640px) {
+  html { font-size: 19px; }
+  h1 { font-size: 2.3rem; }
+  .fact-grid { grid-template-columns: 1fr 1fr; }
+}
+
+@media print {
+  .site-header, .site-nav, .toc { background: #fff; color: #000; }
+  .brand, .site-nav a { color: #000; }
+}
