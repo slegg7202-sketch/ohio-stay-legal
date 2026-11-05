@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- BRAND: "Ohio Stay Legal" — name decided by Stephen Legg on 2026-11-04 (state-file cross-check clean; historical registry portal blocked, residual risk accepted by him). -->
+<title>Page not found — Ohio Stay Legal</title>
+<meta name="description" content="That page doesn't exist. Ohio Stay Legal — the Cleveland Short-Term Rental License Packet.">
+<meta name="theme-color" content="#1b4965">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="index.html">Ohio Stay Legal</a>
+    <nav class="site-nav">
+      <a href="index.html#whats-inside">What's inside</a>
+      <a href="index.html#faq">Questions</a>
+      <a href="index.html#buy">Get the packet</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <h1>That page doesn't exist</h1>
+  <p class="lede">The address may have been typed wrong, or the page has moved. Nothing is lost — everything on this site is one click away:</p>
+
+  <p><a class="button" href="index.html">Go to the homepage</a></p>
+  <p><a class="button" href="packet.html">Open the packet</a></p>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p><strong>Ohio Stay Legal</strong> — plain-language licensing packets for Ohio hosts.</p>
+    <p>Not legal advice. Not affiliated with the City of Cleveland. Ordinance summaries can contain errors; the ordinance itself controls.</p>
+  </div>
+</footer>
+
+<script>
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', function () {
+      navigator.serviceWorker.register('sw.js').catch(function () { /* offline support is a bonus, not a requirement */ });
+    });
+  }
+</script>
+
+</body>
+</html>
