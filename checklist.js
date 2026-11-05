@@ -1,4 +1,4 @@
-/* BRAND: "Ohio Stay Legal" — working name, verification pending.
+/* BRAND: "Ohio Stay Legal" — name decided by Stephen Legg on 2026-11-04 (state-file cross-check clean; historical registry portal blocked, residual risk accepted by him).
    Packet checklist: makes the 12-item application checklist on packet.html
    interactive. Progress is saved only in this browser's localStorage.
    No accounts, no server, nothing leaves the device. */

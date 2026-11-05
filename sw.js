@@ -1,9 +1,9 @@
-/* BRAND: "Ohio Stay Legal" — working name, verification pending.
+/* BRAND: "Ohio Stay Legal" — name decided by Stephen Legg on 2026-11-04 (state-file cross-check clean; historical registry portal blocked, residual risk accepted by him).
    Service worker: cache-first for this site's own pages and assets,
    so the packet keeps working offline after the app is installed.
    Bump CACHE_VERSION whenever a site file changes. */
 
-var CACHE_VERSION = 'site-v3';
+var CACHE_VERSION = 'site-v4';
 var CACHE_NAME = 'ohiostaylegal-' + CACHE_VERSION;
 
 var CORE_FILES = [
