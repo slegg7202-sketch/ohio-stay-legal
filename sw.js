@@ -3,7 +3,7 @@
    so the packet keeps working offline after the app is installed.
    Bump CACHE_VERSION whenever a site file changes. */
 
-var CACHE_VERSION = 'site-v1';
+var CACHE_VERSION = 'site-v2';
 var CACHE_NAME = 'ohiostaylegal-' + CACHE_VERSION;
 
 var CORE_FILES = [
