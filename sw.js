@@ -4,14 +4,10 @@
    speed-up for static files (style, scripts, icons).
    Bump CACHE_VERSION whenever a site file changes.
 
-   v5 fix (2026-11-04): the host redirects /packet.html to /packet.
-   v1–v4 cached that redirected response and served it back to page
-   navigations, which browsers refuse — the packet page failed with
-   ERR_FAILED for every returning visitor. Navigations are now
-   network-first, the cache stores the canonical /packet address,
-   and redirected responses are never stored or served to a page. */
+   v6 (2026-11-20): Ord. 1282-2026 packet update — cache bump so returning
+   visitors get the new packet text. */
 
-var CACHE_VERSION = 'site-v5';
+var CACHE_VERSION = 'site-v6';
 var CACHE_NAME = 'ohiostaylegal-' + CACHE_VERSION;
 
 var CORE_FILES = [
